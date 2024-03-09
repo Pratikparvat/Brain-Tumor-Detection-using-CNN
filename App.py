@@ -43,21 +43,10 @@ def proccess(img1):
 uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
-        # Display the uploaded image
-        # image = Image.open(uploaded_file)
+        
     st.image(uploaded_file, caption='Uploaded Image', width=200)
 
-        # Preprocess the image
-    # preprocessed_img = proccess(uploaded_file)
-
-        # Perform prediction
-        # prediction = model.predict(preprocessed_img)
-    # st.write(preprocessed_img)
-        # Display prediction
-        # if prediction > 0.5:
-        #     st.write("Prediction: Tumor Detected")
-        # else:
-        #     st.write("Prediction: No Tumor Detected")
+    
 
 
 submit = st.button("Analyze")
