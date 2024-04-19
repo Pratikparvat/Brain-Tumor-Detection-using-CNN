@@ -37,16 +37,12 @@ def proccess(img1):
     score1 = 100 * np.max(score)
 
     return pred, score1
-
-
     
 uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
         
-    st.image(uploaded_file, caption='Uploaded Image', width=200)
-
-    
+    st.image(uploaded_file, caption='Uploaded Image', width=200)   
 
 
 submit = st.button("Analyze")
